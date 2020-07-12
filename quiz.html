@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Quiz</title>
+		<style>
+			.container {
+ 				padding: 60px;	
+			}
+			
+		</style>
+	</head>
+	<body>
+	<div class="container " >
+		<h1 style="background-color:powderblue; text-align:center;color: white">QUIZ</h1>
+		<h3>Read the question and select the appropriate answers</h3>
+		<div class="qPanel" >
+			<div id="question">
+			</div>
+			<div ><input type="radio" id="opt1" name="options">
+				<span id="optt1"></span>
+			</div>
+			<div ><input type= "radio" id= "opt2" name= "options">
+				<span id= "optt2"></span>
+			</div>
+			<div ><input type="radio" id="opt3" name="options">
+				<span id="optt3"></span>
+			</div>
+			<br>
+			<button id="nextButton" onClick="checkAnswers()" style="background-color: powderblue; border: none;color: white;padding: 15px 32px;text-align: center; text-decoration: none;display: inline-block; font-size: 16px;">Next</button>
+
+		</div>
+		<script src="questions.json\\questions.json"></script>
+		<script src="quizCall.js"></script>
+	</div>
+	</body>
+</html>
+
